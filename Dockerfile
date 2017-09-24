@@ -9,10 +9,6 @@ ENV SDK_HOME=/sdk \
 
 WORKDIR $SDK_HOME
 
-# Set user jenkins to the image
-RUN useradd -m -d /home/jenkins -s /bin/sh jenkins \
-  && echo "jenkins:jenkins" | chpasswd
-
 RUN apt-get --quiet update --yes \
   && apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1 git file build-essential ca-certificates openssh-server --no-install-recommends \
   && apt-get -q autoremove \
@@ -119,11 +115,3 @@ RUN set -ex \
 
 # Install global npm modules
 RUN npm install -g react-native-cli
-
-# Standard SSH port
-EXPOSE 22
-
-# Default command
-CMD ["/usr/sbin/sshd", "-D"]
-
-USER jenkins
