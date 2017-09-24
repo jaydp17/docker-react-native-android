@@ -14,11 +14,14 @@ A 🐳 docker image for building ⚛ React Native Apps (Android only)
 # The below will run the container and open up a bash session in side the container
 $ docker run --rm -it -v /path/to/my/react-native-app:/app jaydp17/react-native:latest bash
 
-# Now cd into the android folder and build the app
-$ cd /app/android
+# cd into the project
+$ cd /app
 
 # install npm modules
 $ yarn
+
+# Now cd into the android folder
+$ cd android
 
 # build the app
 $ ./gradlew assembleRelease
