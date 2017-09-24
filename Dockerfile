@@ -34,8 +34,8 @@ ENV GRADLE_HOME ${SDK_HOME}/gradle-${GRADLE_VERSION}
 ENV PATH ${GRADLE_HOME}/bin:$PATH
 
 # android sdk|build-tools|image
-ENV ANDROID_TARGET_SDK="android-23" \
-  ANDROID_BUILD_TOOLS="build-tools-23.0.1" \
+ENV ANDROID_TARGET_SDK="android-23,android-25,android-26" \
+  ANDROID_BUILD_TOOLS="build-tools-23.0.1,build-tools-25.0.2,build-tools-26.0.1" \
   ANDROID_SDK_TOOLS="25.2.3" \
   ANDROID_HOME=${SDK_HOME}/android-sdk-linux \
   PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:$PATH:${ANDROID_HOME}/cmake/bin
