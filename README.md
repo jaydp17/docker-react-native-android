@@ -12,7 +12,7 @@ A 🐳 docker image for building ⚛ React Native Apps (Android only)
 ## How to use?
 ```sh
 # The below will run the container and open up a bash session in side the container
-$ docker run --rm -it -v /path/to/my/react-native-app:/app jaydp17/react-native:latest bash
+$ docker run --rm -it -v /path/to/my/react-native-app:/app jaydp17/react-native-android:latest bash
 
 # cd into the project
 $ cd /app
