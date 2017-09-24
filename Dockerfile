@@ -117,6 +117,9 @@ RUN set -ex \
   && ln -s /opt/yarn/bin/yarn /usr/local/bin/yarnpkg \
 && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz
 
+# Install global npm modules
+RUN npm install -g react-native-cli
+
 # Standard SSH port
 EXPOSE 22
 
