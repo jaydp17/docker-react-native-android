@@ -1,6 +1,10 @@
 # docker-react-native-android
 A 🐳 docker image for building ⚛ React Native Apps (Android only)
 
+[![Travis](https://img.shields.io/travis/jaydp17/docker-react-native-android.svg)](https://travis-ci.org/jaydp17/docker-react-native-android)
+[![](https://images.microbadger.com/badges/image/jaydp17/react-native-android.svg)](https://microbadger.com/images/jaydp17/react-native-android)
+
+
 ### Installed Packages
 - Open JDK 8
 - Gradle v3.3
