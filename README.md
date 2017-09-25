@@ -30,3 +30,4 @@ $ cd android
 # build the app
 $ ./gradlew assembleRelease
 ```
+Once the build is successful, you can find the apk in `app/build/outputs/apk/` directory.
